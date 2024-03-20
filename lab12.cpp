@@ -3,11 +3,12 @@
 #include <deque>
 
 template <typename T>
-class ReverseIterator {
-public:
-    using value_type = T;
-    using pointer = T*;
-    using reference = T&;
+class ReverseIterator 
+{
+    public:
+        using value_type = T;
+        using pointer = T*;
+        using reference = T&;
 
     ReverseIterator(pointer ptr) : ptr(ptr) {}
 
@@ -38,8 +39,8 @@ public:
         return ptr != other.ptr;
     }
 
-private:
-    pointer ptr;
+    private:
+        pointer ptr;
 };
 
 template <typename T>
